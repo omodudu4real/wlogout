@@ -1,0 +1,98 @@
+@import 'colorscheme.css';
+
+window {
+  font-family: Merienda Medium;
+  font-size: 16pt;
+  color: @foreground; /* text */
+  background-color: rgba(24, 27, 32, 0.25);
+}
+
+button {
+  all: unset;
+  border: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18%;
+  background-color: transparent;
+  animation: gradient_f 20s ease-in-out infinite;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px 2px transparent;
+  border-radius: 50px;
+  margin-top: 210px;
+  margin-bottom: 140px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+label {
+  font-size: 18px;
+  color: white;
+}
+
+button:focus {
+  box-shadow: none;
+  background-size: 20%;
+}
+
+button:hover {
+  background-size: 30%;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+  background-color: @color6;
+  color: transparent;
+  outline: none;
+  transition:
+    all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682),
+    box-shadow 0.2s ease-in-out;
+}
+
+#shutdown {
+  background-image: image(url('/home/omodudu/.config/wlogout/icons/power.png'));
+}
+#shutdown:hover {
+  background-image: image(
+    url('/home/omodudu/.config/wlogout/icons/power-hover.png')
+  );
+}
+
+#logout {
+  background-image: image(
+    url('/home/omodudu/.config/wlogout/icons/logout.png')
+  );
+}
+#logout:hover {
+  background-image: image(
+    url('/home/omodudu/.config/wlogout/icons/logout-hover.png')
+  );
+}
+
+#reboot {
+  background-image: image(
+    url('/home/omodudu/.config/wlogout/icons/restart.png')
+  );
+}
+#reboot:hover {
+  background-image: image(
+    url('/home/omodudu/.config/wlogout/icons/restart-hover.png')
+  );
+}
+
+#lock {
+  background-image: image(url('/home/omodudu/.config/wlogout/icons/lock.png'));
+}
+#lock:hover {
+  background-image: image(
+    url('/home/omodudu/.config/wlogout/icons/lock-hover.png')
+  );
+}
+
+#hibernate {
+  background-image: image(
+    url('/home/omodudu/.config/wlogout/icons/hibernate.png')
+  );
+}
+#hibernate:hover {
+  background-image: image(
+    url('/home/omodudu/.config/wlogout/icons/hibernate-hover.png')
+  );
+}
