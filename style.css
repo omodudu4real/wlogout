@@ -15,11 +15,11 @@ button {
   animation: gradient_f 1s ease-in-out infinite;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 10px 2px transparent;
-  border-radius: 50px;
+  border-radius: 70px;
   margin-top: 210px;
   margin-bottom: 140px;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
   outline: none;
 }
 
@@ -37,8 +37,8 @@ button:focus {
 
 button:hover {
   background-size: 40%;
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
-  background-color: alpha(@inverse_primary, 0.6);
+  box-shadow: 0 0 10px 3px alpha(@shadow, 0.5);
+  background-color: alpha(@inverse_primary, 0.5);
   color: transparent;
   outline: none;
   transition:
