@@ -96,3 +96,12 @@ button:hover {
     url('/home/omodudu/.config/wlogout/icons/hibernate-hover.png')
   );
 }
+
+#sleep {
+  background-image: image(url('/home/omodudu/.config/wlogout/icons/sleep.png'));
+}
+#sleep:hover {
+  background-image: image(
+    url('/home/omodudu/.config/wlogout/icons/sleep-hover.png')
+  );
+}
